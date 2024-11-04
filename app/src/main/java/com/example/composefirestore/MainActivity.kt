@@ -20,10 +20,13 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeFireStoreTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    /*
                     Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
+                    */
+                    Birth(m = Modifier.padding(innerPadding))
                 }
             }
         }
@@ -31,17 +34,6 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+fun Birth(m: Modifier){
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ComposeFireStoreTheme {
-        Greeting("Android")
-    }
 }
